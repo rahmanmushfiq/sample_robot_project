@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200127 23:31:36.735" rpa="false">
-<suite id="s1" name="Test BitMascot Website" source="C:\Users\mushf\Documents\Robot Framework Tests\Test BitMascot Website">
-<suite id="s1-s1" name="Test" source="C:\Users\mushf\Documents\Robot Framework Tests\Test BitMascot Website\Test">
-<suite id="s1-s1-s1" name="FirstSeleniumTest" source="C:\Users\mushf\Documents\Robot Framework Tests\Test BitMascot Website\Test\FirstSeleniumTest.robot">
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200129 10:48:25.510" rpa="false">
+<suite id="s1" name="Sample Robot Project" source="C:\Users\mushf\Documents\GitHub\sample_robot_project">
+<suite id="s1-s1" name="Test" source="C:\Users\mushf\Documents\GitHub\sample_robot_project\Test">
+<suite id="s1-s1-s1" name="FirstSeleniumTest" source="C:\Users\mushf\Documents\GitHub\sample_robot_project\Test\FirstSeleniumTest.robot">
 <test id="s1-s1-s1-t1" name="SampleLoginTest">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -10,15 +10,15 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20200127 23:31:37.180" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20200127 23:31:37.179" endtime="20200127 23:31:45.799"></status>
+<msg timestamp="20200129 10:48:26.928" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20200129 10:48:26.925" endtime="20200129 10:48:36.328"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200127 23:31:45.800" endtime="20200127 23:31:45.803"></status>
+<status status="PASS" starttime="20200129 10:48:36.329" endtime="20200129 10:48:36.380"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -26,8 +26,8 @@
 <arg>id=&amp;{elements}[username_field_id]</arg>
 <arg>&amp;{Credentials}[username]</arg>
 </arguments>
-<msg timestamp="20200127 23:31:45.804" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
-<status status="PASS" starttime="20200127 23:31:45.803" endtime="20200127 23:31:46.000"></status>
+<msg timestamp="20200129 10:48:36.381" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" starttime="20200129 10:48:36.380" endtime="20200129 10:48:36.726"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -35,68 +35,68 @@
 <arg>id=&amp;{elements}[password_field_id]</arg>
 <arg>&amp;{Credentials}[password]</arg>
 </arguments>
-<msg timestamp="20200127 23:31:46.002" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
-<status status="PASS" starttime="20200127 23:31:46.001" endtime="20200127 23:31:46.213"></status>
+<msg timestamp="20200129 10:48:36.727" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" starttime="20200129 10:48:36.726" endtime="20200129 10:48:36.951"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>id=&amp;{elements}[login_button_id]</arg>
 </arguments>
-<msg timestamp="20200127 23:31:46.214" level="INFO">Clicking button 'id=btnLogin'.</msg>
-<status status="PASS" starttime="20200127 23:31:46.213" endtime="20200127 23:31:50.092"></status>
+<msg timestamp="20200129 10:48:36.952" level="INFO">Clicking button 'id=btnLogin'.</msg>
+<status status="PASS" starttime="20200129 10:48:36.951" endtime="20200129 10:48:38.923"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>id=&amp;{elements}[welcome_id]</arg>
 </arguments>
-<msg timestamp="20200127 23:31:50.094" level="INFO">Clicking element 'id=welcome'.</msg>
-<status status="PASS" starttime="20200127 23:31:50.092" endtime="20200127 23:31:50.293"></status>
+<msg timestamp="20200129 10:48:38.925" level="INFO">Clicking element 'id=welcome'.</msg>
+<status status="PASS" starttime="20200129 10:48:38.924" endtime="20200129 10:48:39.058"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>2</arg>
 </arguments>
-<status status="PASS" starttime="20200127 23:31:50.294" endtime="20200127 23:31:50.297"></status>
+<status status="PASS" starttime="20200129 10:48:39.058" endtime="20200129 10:48:39.061"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>link=&amp;{elements}[logout_id]</arg>
 </arguments>
-<msg timestamp="20200127 23:31:50.298" level="INFO">Clicking element 'link=Logout'.</msg>
-<status status="PASS" starttime="20200127 23:31:50.297" endtime="20200127 23:31:51.645"></status>
+<msg timestamp="20200129 10:48:39.064" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20200129 10:48:39.062" endtime="20200129 10:48:41.721"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200127 23:31:51.646" endtime="20200127 23:31:53.887"></status>
+<status status="PASS" starttime="20200129 10:48:41.722" endtime="20200129 10:48:44.965"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Test Completed Successfully</arg>
 </arguments>
-<msg timestamp="20200127 23:31:53.889" level="INFO">Test Completed Successfully</msg>
-<status status="PASS" starttime="20200127 23:31:53.888" endtime="20200127 23:31:53.889"></status>
+<msg timestamp="20200129 10:48:44.967" level="INFO">Test Completed Successfully</msg>
+<status status="PASS" starttime="20200129 10:48:44.966" endtime="20200129 10:48:44.967"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>This test is performed by %{username} on %{os}</arg>
 </arguments>
-<msg timestamp="20200127 23:31:53.891" level="INFO">This test is performed by mushf on Windows_NT</msg>
-<status status="PASS" starttime="20200127 23:31:53.890" endtime="20200127 23:31:53.891"></status>
+<msg timestamp="20200129 10:48:44.969" level="INFO">This test is performed by mushf on Windows_NT</msg>
+<status status="PASS" starttime="20200129 10:48:44.968" endtime="20200129 10:48:44.970"></status>
 </kw>
 <doc>This is a sample login test case</doc>
-<status status="PASS" starttime="20200127 23:31:37.176" endtime="20200127 23:31:53.892" critical="yes"></status>
+<status status="PASS" starttime="20200129 10:48:26.916" endtime="20200129 10:48:44.970" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200127 23:31:36.833" endtime="20200127 23:31:53.893"></status>
+<status status="PASS" starttime="20200129 10:48:25.849" endtime="20200129 10:48:44.974"></status>
 </suite>
-<status status="PASS" starttime="20200127 23:31:36.828" endtime="20200127 23:31:53.897"></status>
+<status status="PASS" starttime="20200129 10:48:25.832" endtime="20200129 10:48:44.979"></status>
 </suite>
-<status status="PASS" starttime="20200127 23:31:36.788" endtime="20200127 23:31:53.900"></status>
+<status status="PASS" starttime="20200129 10:48:25.777" endtime="20200129 10:48:44.982"></status>
 </suite>
 <statistics>
 <total>
@@ -106,9 +106,9 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Test BitMascot Website">Test BitMascot Website</stat>
-<stat pass="1" fail="0" id="s1-s1" name="Test">Test BitMascot Website.Test</stat>
-<stat pass="1" fail="0" id="s1-s1-s1" name="FirstSeleniumTest">Test BitMascot Website.Test.FirstSeleniumTest</stat>
+<stat pass="1" fail="0" id="s1" name="Sample Robot Project">Sample Robot Project</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">Sample Robot Project.Test</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="FirstSeleniumTest">Sample Robot Project.Test.FirstSeleniumTest</stat>
 </suite>
 </statistics>
 <errors>

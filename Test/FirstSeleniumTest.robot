@@ -21,3 +21,4 @@ SampleLoginTest
     Close Browser           
     Log    Test Completed Successfully
     Log    This test is performed by %{username} on %{os}
+    
